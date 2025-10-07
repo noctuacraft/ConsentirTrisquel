@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con.sentir Trisquel - Consultorio interdisciplinario</title>
+    <meta name="description" content="Con.Sentir Trisquel, centro psicopedagógico en Hurlingham y Morris. Psicología, fonoaudiología, estimulación temprana y acompañamiento integral.">
+    <meta name="keywords" content="Con.Sentir Trisquel, Consentir Trisquel, Trisquel, centro psicopedagógico, psicopedagogía, gabinete interdisciplinario, psicología infantil, estimulación temprana, fonoaudiología, terapia ocupacional, psicomotricidad, apoyo escolar, orientación vocacional, educación inclusiva, acompañamiento pedagógico, desarrollo emocional, atención personalizada, bienestar, Hurlingham, Morris, Buenos Aires">
+    <link rel="icon" href="assets/img/logo2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- WhatsApp Contact Options -->
+    <div class="whatsapp-options">
+        <button class="whatsapp-close">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <h3 style="margin-bottom: 1rem; color: var(--primary-purple);">Selecciona un contacto</h3>
+
+        <!-- Opción Morris -->
+        <a href="https://wa.me/5491131752756?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios" 
+           class="whatsapp-option" target="_blank">
+           <div class="whatsapp-option-icon">
+              <i class="fab fa-whatsapp"></i>
+           </div>
+           <div class="whatsapp-option-text">
+              <h4>Teléfono (Sede Morris)</h4>
+              <p>+54 9 11-3175-2756</p>
+           </div>
+        </a>
+
+        <!-- Hurlingham -->
+        <a href="https://wa.me/5491154630100?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios" 
+           class="whatsapp-option" target="_blank">
+           <div class="whatsapp-option-icon">
+              <i class="fab fa-whatsapp"></i>
+           </div>
+           <div class="whatsapp-option-text">
+              <h4>Teléfono (Sede Hurlingham)</h4>
+              <p>+54 9 11-5463-0100</p>
+           </div>
+        </a>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp" id="whatsappButton">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="assets/img/logo2.png" alt="Con.sentir Trisquel" class="logo-img">
+                </div>
+                <span>Con.sentir Trisquel</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuButton">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Especialidades</a></li>
+                    <li><a href="#flyers">Talleres y más</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#team">Equipo</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Un espacio donde crecer y aprender</h1>
+            <p>En Con.sentir Trisquel acompañamos a niños, adolescentes y adultos en su desarrollo personal y aprendizaje. Creemos en un enfoque integral que combine profesionalismo, calidez y respeto por cada individuo.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn">Conoce nuestras Especialidades</a>
+                <a href="#" class="btn btn-whatsapp" id="heroWhatsappButton">
+                    <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestras especialidades</h2>
+                <p>Ofrecemos una amplia gama de servicios especializados para atender las necesidades de cada persona</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Psicopedagogía -->
+                <div class="service-card psychopedagogy">
+                    <div class="ref_image">
+                        <img src="assets/img/psicopedagogia.jpg" alt="Psicopedagogía">
+                    </div>
+                    <h3>Psicopedagogía</h3>
+                    <p>Trabaja con niños, adolescentes y adultos para identificar cómo la atención, memoria, lenguaje, funciones ejecutivas y emociones influyen en la manera de aprender. Su objetivo es diagnosticar y diseñar intervenciones personalizadas que fortalezcan estas habilidades, favoreciendo el rendimiento escolar, académico o laboral.</p>
+                </div>
+
+                <!-- Psicología -->
+                <div class="service-card psychology">
+                    <div class="ref_image">
+                        <img src="assets/img/psicologia.jpeg" alt="Psicología">
+                    </div>
+                    <h3>Psicología</h3>
+                    <p>Estudia los procesos mentales, emociones y el comportamiento humano. Evalúa, previene y trata dificultades emocionales, conductuales y de relación, promoviendo el bienestar y desarrollo personal en todas las edades.</p>
+                </div>
+
+                <!-- Psicomotricidad -->
+                <div class="service-card cogni-psico-tera">
+                    <div class="ref_image">
+                        <img src="assets/img/psicomotricidad.jpg" alt="Psicomotricidad">
+                    </div>
+                    <h3>Psicomotricidad</h3>
+                    <p>Se trabaja desde el movimiento, el cuerpo y el juego como mediadores para favorecer el desarrollo integral. La psicomotricista acompaña al sujeto en la exploración de sus posibilidades motrices, expresivas, relacionales y simbólicas.</p>
+                </div>
+
+                <!-- Kinesiología -->
+                <div class="service-card speech-therapy">
+                    <div class="ref_image">
+                        <img src="assets/img/kinesiologia.jpg" alt="Kinesiología">
+                    </div>
+                    <h3>Kinesiología</h3>
+                    <p>Tratamiento por medio del movimiento. Nuestros kinesiólogos especializados trabajan en recuperación funcional, rehabilitación y prevención de lesiones.</p>
+                    <div style="text-align: left; width: 100%;">
+                        <strong>Beneficios:</strong>
+                        <ul style="margin-left: 1.2rem; margin-top: 0.5rem;">
+                            <li>Disminución del dolor y la inflamación</li>
+                            <li>Recuperación de la movilidad</li>
+                            <li>Ejercicios para prevenir recaídas</li>
+                            <li>Vuelta segura a tus actividades diarias</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Terapia Ocupacional -->
+                <div class="service-card kinesiology">
+                    <div class="ref_image">
+                        <img src="assets/img/terapia_ocupacional.jpg" alt="Terapia Ocupacional">
+                    </div>
+                    <h3>Terapia Ocupacional</h3>
+                    <p>Se centra en ayudar a personas de todas las edades a participar en actividades cotidianas que les dan sentido y autonomía. Evalúa habilidades físicas, cognitivas, sensoriales y sociales para diseñar intervenciones que permitan mantener o recuperar independencia en el estudio, trabajo, juego o vida comunitaria.</p>
+                </div>
+
+                <!-- Fonoaudiología -->
+                <div class="service-card speech-therapy">
+                    <div class="ref_image">
+                        <img src="assets/img/fonoaudiologia.jpg" alt="Fonoaudiología">
+                    </div>
+                    <h3>Fonoaudiología</h3>
+                    <p>Evaluación e intervención en trastornos del lenguaje, habla, voz y comunicación. Se trabaja con pacientes de todas las edades para mejorar sus habilidades comunicativas y favorecer una comunicación efectiva.</p>
+                </div>
+
+                <!-- Neuropsicología -->
+                <div class="service-card psychopedagogy">
+                    <div class="ref_image">
+                        <img src="assets/img/neuropsicologia.jpg" alt="Neuropsicología / Neurocognitiva">
+                    </div>
+                    <h3>Neuropsicología / Neurocognitiva</h3>
+                    <p>Estudia el cerebro en sujetos sanos con dificultades cognitivas o que han sufrido daño cerebral. Evalúa, identifica y crea planes de rehabilitación personalizados.</p>
+                    <ul>
+                        <li>Evaluación mediante técnicas psicométricas</li>
+                        <li>Detección de dificultades en el funcionamiento</li>
+                        <li>Rehabilitación de funciones cognitivas según el paciente</li>
+                    </ul>
+                </div>
+
+                <!-- Intervención y Estimulación Temprana -->
+                <div class="service-card psychology">
+                    <div class="ref_image">
+                        <img src="assets/img/estimulacion_temprana.jpeg" alt="Intervención y Estimulación Temprana">
+                    </div>
+                    <h3>Intervención y Estimulación Temprana</h3>
+                    <p>Trabajamos con bebés de 0 a 3 años con riesgo de trastornos del desarrollo o signos tempranos de alteraciones en su crecimiento. Se promueve el desarrollo óptimo cognitivo, motor y emocional, mediante un abordaje interdisciplinario adaptado a las necesidades de cada bebé y su familia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flyers & Admisiones Section -->
+    <section id="flyers" class="flyers">
+        <div class="container">
+            <!-- Talleres -->
+            <div class="section-header">
+                <h2>¡Conoce nuestros talleres!</h2>
+                <p>Conoce más sobre Con.Sentir Trisquel a través de nuestro material gráfico y campañas informativas.</p>
+            </div>
+
+            <div class="flyers-grid">
+                <div class="flyer-item">
+                    <img src="assets/img/flyer3.jpg" alt="Flyer 1" onclick="openLightbox(0)">
+                </div>
+                <div class="flyer-item">
+                    <img src="assets/img/flyer2.jpg" alt="Flyer 2" onclick="openLightbox(1)">
+                </div>
+            </div>
+
+            <!-- Admisiones -->
+            <div class="section-header" style="margin-top: 60px;">
+                <h2>¿Quieres formar parte de Con.Sentir Trisquel?</h2>
+                <p>Si deseas sumarte a nuestro equipo interdisciplinario, envíanos tu postulación. Estamos en constante búsqueda de profesionales comprometidos con el bienestar y la educación.</p>
+            </div>
+
+            <div class="admissions-grid" style="text-align: center;">
+                <div class="flyer-item">
+                    <img src="assets/img/admisiones.jpg" alt="Flyer Admisiones" onclick="openLightbox(2)" style="cursor: pointer;">
+                </div>
+            </div>
+
+            <div class="admissions" style="text-align: center; margin-top: 20px;">
+                <a href="mailto:consentir.trisquel@gmail.com?subject=Postulación%20a%20Con.Sentir%20Trisquel&body=Hola%2C%20me%20gustaría%20postularme%20para%20formar%20parte%20del%20equipo.%20Adjunto%20mi%20CV%20y%20información%20relevante." 
+                   class="admissions-button" style="margin-right: 15px;">
+                    📧 Postulación por Email
+                </a>
+
+                <button onclick="toggleWhatsappMenu()" class="admissions-button" style="background-color: #25D366;">
+                    💬 Postulación por WhatsApp
+                </button>
+
+                <div id="whatsapp-menu" style="display:none; margin-top: 10px;">
+                    <a href="https://wa.me/5491154630100?text=Hola%2C%20me%20gustaría%20postularme%20para%20formar%20parte%20del%20equipo%20de%20Con.Sentir%20Trisquel." 
+                       target="_blank" class="admissions-button" style="display:block; margin: 5px auto; background-color:#128C7E;">
+                        📍 Sede Hurlingham
+                    </a>
+                    <a href="https://wa.me/5491131752756?text=Hola%2C%20me%20gustaría%20postularme%20para%20formar%20parte%20del%20equipo%20de%20Con.Sentir%20Trisquel." 
+                       target="_blank" class="admissions-button" style="display:block; margin: 5px auto; background-color:#075E54;">
+                        📍 Sede Morris
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+        <img id="lightbox-img" class="lightbox-content">
+        <span class="next" onclick="changeSlide(1)">&#10095;</span>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nosotros</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Con.sentir Trisquel es un espacio terapéutico donde acompañamos a niños, adolescentes y adultos en sus procesos de desarrollo, aprendizaje y bienestar emocional y físico.</p>
+                    <p>Creemos en la importancia del vínculo, la escucha activa y el trabajo conjunto para construir caminos posibles, respetando el ritmo y las necesidades de cada etapa de la vida.</p>
+                    <a href="#contact" class="btn">Agenda una cita</a>
+                </div>
+                <div class="about-image">
+                    <div style="width:100%; height:480px; display:flex; align-items:center; justify-content:center; color:var(--primary-purple); font-size:1.2rem; flex-direction:column;">
+                        <img src="assets/img/logo2.png" alt="Con.sentir Trisquel" class="logo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Equipo</h2>
+                <p>Un grupo de profesionales que trabajan desde el compromiso, la escucha y el acompañamiento integral.</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Psicopedagogía -->
+                <div class="team-member area-educ">
+                    <div class="member-photo">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Psicopedagogía</h3>
+                    <p class="member-desc">Acompañamos los procesos de aprendizaje con mirada empática y herramientas personalizadas.</p>
+                    <ul>
+                        <li>Lic. Stella Díaz</li>
+                        <li>Lic. Laura Escalada</li>
+                    </ul>
+                </div>
+
+                <!-- Psicología -->
+                <div class="team-member area-psico">
+                    <div class="member-photo">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Psicología</h3>
+                    <p class="member-desc">Niños, adolescentes y adultos. Espacios para comprender, crecer y sanar.</p>
+                    <ul>
+                        <li>Lic. Elizabeth Leguizamón</li>
+                        <li>Lic. María de los Ángeles Moreno</li>
+                        <li>Lic. Antonella Oppedisano</li>
+                    </ul>
+                </div>
+
+                <!-- Fonoaudiología -->
+                <div class="team-member area-fono">
+                    <div class="member-photo">
+                        <i class="fas fa-ear-listen"></i>
+                    </div>
+                    <h3>Fonoaudiología</h3>
+                    <p class="member-desc">Favorecemos la comunicación y el lenguaje desde la expresión y la escucha activa.</p>
+                    <ul>
+                        <li>Melina Guanca</li>
+                    </ul>
+                </div>
+
+                <!-- Kinesiología -->
+                <div class="team-member area-kine">
+                    <div class="member-photo">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Kinesiología</h3>
+                    <p class="member-desc">Recuperar el movimiento es también recuperar la libertad y la autonomía.</p>
+                    <ul>
+                        <li>Lic. Vanina Mayorano</li>
+                    </ul>
+                </div>
+
+                <!-- Estimulación Temprana -->
+                <div class="team-member area-estim">
+                    <div class="member-photo">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Estimulación Temprana</h3>
+                    <p class="member-desc">Un acompañamiento sensible para potenciar las primeras etapas del desarrollo.</p>
+                    <ul>
+                        <li>Lic. Romina Franchi</li>
+                    </ul>
+                </div>
+
+                <!-- Terapia Ocupacional -->
+                <div class="team-member area-ocupa">
+                    <div class="member-photo">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Terapia Ocupacional</h3>
+                    <p class="member-desc">Promovemos la autonomía a través de la creatividad, el juego y la práctica cotidiana.</p>
+                    <ul>
+                        <li>Brenda Escalada</li>
+                    </ul>
+                </div>
+
+                <!-- Psicomotricidad -->
+                <div class="team-member area-psico2">
+                    <div class="member-photo">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Psicomotricidad</h3>
+                    <p class="member-desc">Cuerpo y emoción se integran en un mismo lenguaje: el movimiento.</p>
+                    <ul>
+                        <li>Brenda Gaggini</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" style="padding: 50px 0;">
+        <div class="container" style="max-width: 1000px; margin: auto;">
+            <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+                <h2 style="font-size: 32px; margin-bottom: 15px;">Contacto</h2>
+                <p style="font-size: 18px; color: #555;">Estamos aquí para ayudarte. Contáctanos para solicitar una cita o resolver tus dudas</p>
+            </div>
+
+            <div class="contact-container">
+                <!-- Sede Morris -->
+                <div class="contact-item-with-map">
+                    <div class="contact-header">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Sede Morris</h3>
+                            <p><strong>Dirección:</strong> Poeta Risso 3390</p>
+                            <p><strong>Teléfono:</strong> +54 9 11-3175-2756</p>
+                        </div>
+                    </div>
+
+                    <!-- Mapa Morris -->
+                    <div class="contact-map-container">
+                        <iframe
+                            src="https://www.google.com/maps?q=Poeta+Risso+3390,+Hurlingham,+Buenos+Aires,+Argentina&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Sede Hurlingham -->
+                <div class="contact-item-with-map">
+                    <div class="contact-header">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Sede Hurlingham</h3>
+                            <p><strong>Dirección:</strong> A. Jauretche 1497, 2° "K"</p>
+                            <p><strong>Teléfono:</strong> +54 9 11-5463-0100</p>
+                        </div>
+                    </div>
+
+                    <!-- Mapa Hurlingham -->
+                    <div class="contact-map-container">
+                        <iframe
+                            src="https://www.google.com/maps?q=Avenida+Arturo+Jauretche+1497,+Hurlingham,+Buenos+Aires,+Argentina&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>
+                            <a href="mailto:consentir.trisquel@gmail.com" 
+                               title="Haz click para enviar correo" 
+                               class="contact-email-link">
+                                consentir.trisquel@gmail.com
+                            </a>
+                        <br>Click al correo para ir a gmail!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Horarios -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Horario de atención</h3>
+                        <p>Lunes a Viernes: 9:00 - 20:00</p>
+                        <p>Sábados: 10:00 - 14:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <div class="logo-image">
+                        <img src="assets/img/logo.png" alt="Con.sentir Trisquel" class="logo-img">
+                    </div>
+                    <span style="color: rgb(0, 0, 0);">Con.sentir Trisquel</span>
+                </div>
+                <p style="color: rgba(0, 0, 0, 0.8);">Consultorio Interdisciplinado</p>
+                
+                <!-- Redes Sociales - MEJORADO -->
+                <div class="social-links">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/share/1AF4uDMsZ2/"
+                       target="_blank"
+                       class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/consentirtrisquel" target="_blank"
+                       class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                    <!-- WhatsApp Dropdown - MEJORADO -->
+                    <div class="whatsapp-dropdown">
+                        <a href="#" 
+                           class="whatsapp-icon social-link"
+                           onclick="event.preventDefault(); toggleWhatsappDropdown()">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <p>Elegí tu sede:</p>
+                            <a href="https://wa.me/5491154630100" target="_blank">
+                                <i class="fas fa-map-marker-alt"></i> Hurlingham
+                            </a>
+                            <a href="https://wa.me/5491131752756" target="_blank">
+                                <i class="fas fa-map-marker-alt"></i> Morris
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright dinámico -->
+                <div class="copyright">
+                    &copy; <span id="year"></span> NoctuaCraft (Frederick Joaquin Riedel Padilla) - Todos los derechos reservados
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>
