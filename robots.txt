@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://consentirtrisquel.com.ar/sitemap.xml
