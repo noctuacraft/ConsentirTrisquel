@@ -1,36 +1,37 @@
         // Variables globales para lightbox
-        let currentIndex = 0;
-        const images = [
-            "assets/img/flyer3.jpg",
-            "assets/img/flyer2.jpg",
-            "assets/img/admisiones.jpg"
-        ];
+let currentIndex = 0;
+const images = [
+    "assets/img/flyer1.jpg",
+    "assets/img/flyer2.jpg",
+    "assets/img/flyer3.jpg",
+    "assets/img/admisiones.jpg"
+    // Agregar más imágenes aquí según sea necesario
+];
 
-        // Funciones de lightbox
-        function openLightbox(index) {
-            currentIndex = index;
-            document.getElementById("lightbox").style.display = "flex";
-            document.getElementById("lightbox-img").src = images[currentIndex];
-        }
+// Funciones de lightbox
+function openLightbox(index) {
+    currentIndex = index;
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = images[currentIndex];
+}
 
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
 
-        function changeSlide(direction) {
-            currentIndex = (currentIndex + direction + images.length) % images.length;
-            document.getElementById("lightbox-img").src = images[currentIndex];
-        }
+function changeSlide(direction) {
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    document.getElementById("lightbox-img").src = images[currentIndex];
+}
 
-        // Navegación con teclado (← → Esc)
-        document.addEventListener("keydown", function(e) {
-            if (document.getElementById("lightbox").style.display === "flex") {
-                if (e.key === "ArrowLeft") changeSlide(-1);
-                if (e.key === "ArrowRight") changeSlide(1);
-                if (e.key === "Escape") closeLightbox();
-            }
-        });
-
+// Navegación con teclado (← → Esc)
+document.addEventListener("keydown", function(e) {
+    if (document.getElementById("lightbox").style.display === "flex") {
+        if (e.key === "ArrowLeft") changeSlide(-1);
+        if (e.key === "ArrowRight") changeSlide(1);
+        if (e.key === "Escape") closeLightbox();
+    }
+});
         // WhatsApp contact options functionality
         const whatsappButton = document.getElementById('whatsappButton');
         const heroWhatsappButton = document.getElementById('heroWhatsappButton');
@@ -144,3 +145,66 @@
 
         // Update copyright year
         document.getElementById("year").textContent = new Date().getFullYear();
+// Funcionalidad para la sección unificada de especialidades y equipo
+function initSpecialtiesTeam() {
+    // Filtrado por categorías
+    const navItems = document.querySelectorAll('.nav-item');
+    const specialtyItems = document.querySelectorAll('.specialty-item');
+    
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            
+            // Actualizar navegación activa
+            navItems.forEach(nav => nav.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filtrar especialidades
+            specialtyItems.forEach(specialty => {
+                if (category === 'all' || specialty.getAttribute('data-category') === category) {
+                    specialty.classList.remove('hidden');
+                } else {
+                    specialty.classList.add('hidden');
+                }
+            });
+        });
+    });
+    
+    // Cerrar todos los detalles al cambiar categoría
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            specialtyItems.forEach(specialty => {
+                specialty.classList.remove('active');
+            });
+        });
+    });
+}
+
+// Funcionalidad para mostrar/ocultar detalles de especialidad
+function toggleSpecialtyDetails(element) {
+    const specialtyItem = element.closest('.specialty-item');
+    
+    // Cerrar otros elementos abiertos
+    document.querySelectorAll('.specialty-item.active').forEach(item => {
+        if (item !== specialtyItem) {
+            item.classList.remove('active');
+        }
+    });
+    
+    // Alternar el elemento actual
+    specialtyItem.classList.toggle('active');
+}
+
+// Cerrar detalles al hacer clic fuera
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.specialty-header') && !e.target.closest('.specialty-details')) {
+        document.querySelectorAll('.specialty-item.active').forEach(item => {
+            item.classList.remove('active');
+        });
+    }
+});
+
+// Inicializar cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', function() {
+    initSpecialtiesTeam();
+});
